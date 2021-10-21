@@ -5,11 +5,14 @@ import App from './components/App/App';
 import reportWebVitals from './reportWebVitals';
 import Contador from './components/Contador/Contador';
 import DibujosComplejos from './components/DibujosComplejos/DibujosComplejos';
+import Deportes from './components/Deportes/Deportes';
+import Numeros from './components/Numeros/Numeros';
+import Comics from './components/Comics/Comics';
 
 ReactDOM.render(
   <React.StrictMode>
     <div className="App">
-      <DibujosComplejos />
+      <Comics />
     </div>
   </React.StrictMode>,
   document.getElementById('root')

@@ -11,7 +11,7 @@ class DibujosComplejos extends Component {
         //de forma dinámica
         var lista = [];
         for (var i = 0; i <= 5; i++) {
-            lista.push(<li>Número {i}</li>);
+            lista.push(<li key={i}>Número {i}</li>);
         }
         return lista;
     }
@@ -35,7 +35,7 @@ class DibujosComplejos extends Component {
                 <ul>{this.dibujarNumeros()}</ul>
                 {this.state.nombres.map((name, index) => {
                     return(
-                        <h3>{name}</h3>
+                        <h3 key={index}>{name}</h3>
                     );
                 })}
                 <button onClick={() => {this.insertarNombre("Doraemon")}}>Insertar nombre</button>
