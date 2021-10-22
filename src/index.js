@@ -8,11 +8,21 @@ import DibujosComplejos from './components/DibujosComplejos/DibujosComplejos';
 import Deportes from './components/Deportes/Deportes';
 import Numeros from './components/Numeros/Numeros';
 import Comics from './components/Comics/Comics';
+import Router from './components/Router';
+import Home from './components/Rutas/Home';
+import Musica from './components/Rutas/Musica';
+import Television from './components/Rutas/Television';
+import Pelicula from './components/Rutas/Pelicula';
+import MenuRutas from './components/Rutas/MenuRutas';
+import EjemploSimple from './components/Formulario/EjemploSimple';
+import ConjeturaCollatz from './components/Formulario/ConjeturaCollatz';
+import TablaMultiplicar from './components/Formulario/TablaMultiplicar';
+import TablaMultiplicarSelect from './components/Formulario/TablaMultiplicarSelect';
 
 ReactDOM.render(
   <React.StrictMode>
     <div className="App">
-      <Comics />
+      <TablaMultiplicarSelect />
     </div>
   </React.StrictMode>,
   document.getElementById('root')

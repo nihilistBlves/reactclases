@@ -81,17 +81,10 @@ class Comics extends Component {
         var titulo = document.getElementById("cajaTitulo").value;
         var desc = document.getElementById("cajaDescripcion").value;
         var img = document.getElementById("cajaImagen").value;
-        var comicModificado = {
-            titulo: titulo,
-            descripcion: desc,
-            imagen: img
-        }
 
-        this.state.comics.map((comic, i) => {
-            if (i == index) {
-                comic = comicModificado;
-            }
-        });
+        this.state.comics[index].titulo = titulo;
+        this.state.comics[index].descripcion = desc;
+        this.state.comics[index].imagen = img;
 
         this.setState({
             comics: this.state.comics
